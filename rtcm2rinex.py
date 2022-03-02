@@ -15,7 +15,7 @@
   $Revision: 2059 $
   $LastChangedBy: mzygmunt $
 """
-
+#!/usr/bin/env python
 import argparse
 import datetime
 import os
