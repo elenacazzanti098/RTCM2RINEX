@@ -69,7 +69,7 @@ out_dir_path = args.dest
 '''    
 #%% Sanity check for input parameters
 in_time="2022/03/03"
-out_dir_path="RTCM2RINEX"
+out_dir_path="./"
 in_file_path_name="DATA-COM10.log";
 # check if date string is valid date object
 is_valid_date = True
