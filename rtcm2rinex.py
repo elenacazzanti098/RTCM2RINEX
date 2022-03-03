@@ -108,7 +108,7 @@ if os.path.exists(in_file_path_name) == True:
     # get input file directory path by cutting file name from path string 
     in_file_path = in_file_path_name[0:-len(file_name_ext)]
     # normalize path to remove slash from path
-    ##in_file_path = os.path.normpath(in_file_path)
+    in_file_path = os.path.normpath(in_file_path)
     
 elif in_file_name == "":
      print("Missing input file!")
@@ -124,7 +124,7 @@ else:
 if out_dir_path == None:
     out_dir_path = in_file_path
 
-##out_dir_path = os.path.normpath(out_dir_path)
+out_dir_path = os.path.normpath(out_dir_path)
 
 if os.path.exists(out_dir_path) == False:
     # try creating output directory
