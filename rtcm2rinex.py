@@ -181,7 +181,7 @@ if not os.path.exists(in_rn_path):
     print("Exiting!")
     sys.exit()
 
-arg_script = './convbin_nav_fix.py ' + in_rn_path + ' -o ' + out_rn_path
+arg_script = '!#./convbin_nav_fix.py ' + in_rn_path + ' -o ' + out_rn_path
 fix_command = ' '.join([python_app, arg_script])
 output = subprocess.call(fix_command, shell = True)
  
@@ -201,7 +201,7 @@ if not os.path.exists(in_ro_path):
     print("Exiting!")
     sys.exit()
 
-arg_script = 'convbin_obs_fix.py ' + in_ro_path + ' -o ' + out_ro_path
+arg_script = '!#./convbin_obs_fix.py ' + in_ro_path + ' -o ' + out_ro_path
 fix_command = ' '.join([python_app, arg_script])
 output = subprocess.call(fix_command, shell = True)
 
