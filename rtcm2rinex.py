@@ -48,7 +48,7 @@ else:
     sys.exit()
 
 #%% Read input arguments
-
+'''
 parser = argparse.ArgumentParser()
 parser.add_argument("date", type=str,
                     help="calendar date of beginning of RTCM messages as <YYYY/MM/DD>. " \
@@ -66,9 +66,11 @@ args = parser.parse_args()
 in_time = args.date
 in_file_path_name = args.input_file
 out_dir_path = args.dest
-    
+'''    
 #%% Sanity check for input parameters
-
+in_time="2022/03/03"
+out_dir_path="RTCM2RINEX"
+in_file_path_name="DATA-COM10.log";
 # check if date string is valid date object
 is_valid_date = True
 try:
