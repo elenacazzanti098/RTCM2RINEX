@@ -173,8 +173,8 @@ print("[2/4]: Fixing content of RINEX nav file by re-formatting ephemeris data..
 in_rn_name = in_file_name + '.nav'
 out_rn_name = in_file_name + '_fix.nav'
 
-in_rn_path = os.path.join(./out_dir_path, ./in_rn_name)
-out_rn_path = os.path.join(./out_dir_path,./ out_rn_name)
+in_rn_path = os.path.join(out_dir_path, in_rn_name)
+out_rn_path = os.path.join(out_dir_path, out_rn_name)
 
 if not os.path.exists(in_rn_path):
     print("Can't locate file: " + in_rn_path)
