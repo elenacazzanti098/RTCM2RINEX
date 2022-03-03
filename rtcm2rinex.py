@@ -152,7 +152,7 @@ if op_sys == "Windows":
     arg_app = 'convbin.exe'
     
 if op_sys == "Linux":
-    arg_app = './convbin'
+    arg_app = '#!./convbin'
 
 convbin_command = ' '.join([arg_app, arg_time, arg_format, arg_out_path, arg_file])
 output = subprocess.call(convbin_command, shell = True)
