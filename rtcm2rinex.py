@@ -55,7 +55,7 @@ parser.add_argument("date", type=str,
                         "RTCM messages doesn't contain gnss week information. " \
                         "Almost any date can be used, but only correct date ensures " \
                         "real-life values in RINEX file.")
-parser.add_argument("./input_file", type=str,
+parser.add_argument("input_file", type=str,
                     help="RTCM binary <input_file> to process. " \
                         "File path can be aboslute or relative.")
 parser.add_argument("-d", "--dest", type=str,
@@ -181,7 +181,7 @@ if not os.path.exists(in_rn_path):
     print("Exiting!")
     sys.exit()
 
-arg_script = 'convbin_nav_fix.py ' + in_rn_path + ' -o ' + out_rn_path
+arg_script = './convbin_nav_fix.py ' + in_rn_path + ' -o ' + out_rn_path
 fix_command = ' '.join([python_app, arg_script])
 output = subprocess.call(fix_command, shell = True)
  
